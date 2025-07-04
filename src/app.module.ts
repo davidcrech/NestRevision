@@ -8,6 +8,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     FramesModule,
     MongooseModule.forRoot('mongodb://localhost:27017/frames-shopDB'),
+    FramesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
